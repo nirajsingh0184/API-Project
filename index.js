@@ -60,7 +60,7 @@ app.get('/insertcandidate',(req,res)=>{
     });
 });
 app.get('/insertscore',(req,res)=>{
-    let insert2={first_round:65,second_round:72,third_round:68}
+    let insert2={first_round:6,second_round:7,third_round:6}
         
     let sql='INSERT INTO test_score SET ?';
     db.query(sql,insert2,(err,result)=>{
